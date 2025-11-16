@@ -20,7 +20,7 @@
   --fw--bold: 700;
   --fw--regular: 500;
   /*spacing*/
-  --sp--40px: 2.5rem;
+  --sp-40px: 2.5rem;
   --sp-24px: 1.5rem;
   --sp-16px: 1rem;
 }
@@ -103,4 +103,43 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+}
+
+.card-wrapper {
+  max-width: 320px;
+  border-radius: 20px;
+  padding: var(--sp-16px) var(--sp-16px) var(--sp-40px) var(--sp-16px);
+
+  background-color: var(--clr-white);
+
+  @media screen and (max-width: 30rem) {
+    margin-inline: 27.5px;
+  }
+
+  .qr-image {
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  .card-content {
+    margin-top: 24px;
+    .title {
+      font-size: var(--fs-22px);
+      color: var(--clr-state-900);
+      font-weight: var(--fw--bold);
+      line-height: 1.2;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 16px;
+      font-size: var(--fs-15px);
+      color: var(--clr-state-500);
+      font-weight: var(--fw--regular);
+      line-height: 1.4;
+      letter-spacing: 0.0125rem;
+      text-align: center;
+    }
+  }
 }
