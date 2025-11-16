@@ -36,6 +36,14 @@
   margin: 0;
 }
 
+html {
+  background-color: var(--clr-state-300);
+  color: var(--clr-state-900);
+  font-family: var(--ff--outfit);
+  font-size: var(--fs-15px);
+  font-weight: var(--fw--regular);
+}
+
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -49,6 +57,9 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 /* 6. Improve media defaults */
