@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  /* colors */
+  --clr-state-900: #1f314f;
+  --clr-state-500: #68778d;
+  --clr-state-300: #d5e1ef;
+  --clr-white: #ffffff;
+  /* fonts */
+  --ff--outfit: "Outfit", system-ui, sans-serif;
+  /* font sizes */
+  --fs-22px: 1.375rem;
+  --fs-15px: 0.9375rem;
+  /* font weight */
+  --fw--bold: 700;
+  --fw--regular: 500;
+  /*spacing*/
+  --sp--40px: 2.5rem;
+  --sp-24px: 1.5rem;
+  --sp-16px: 1rem;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
